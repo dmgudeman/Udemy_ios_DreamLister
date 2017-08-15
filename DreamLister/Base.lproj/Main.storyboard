@@ -48,11 +48,43 @@
                                                                 <constraint firstAttribute="height" constant="100" id="79C-Os-pKp"/>
                                                             </constraints>
                                                         </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tesla Model S" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDB-0A-O05">
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="21" id="Kaa-Bo-oc8"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                                            <color key="textColor" red="0.29222656250000001" green="0.29222656250000001" blue="0.29222656250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$80,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d53-TY-KKr">
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="9zf-Tx-gtR"/>
+                                                                <constraint firstAttribute="height" constant="21" id="EbV-ce-Zre"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                            <color key="textColor" red="0.29222656250000001" green="0.29222656250000001" blue="0.29222656250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Someday my dreams will come true and I will own this car. Just you wait" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ppo-sl-Y6p">
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                            <color key="textColor" red="0.29222656250000001" green="0.29222656250000001" blue="0.29222656250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstItem="ynZ-jA-1BV" firstAttribute="leading" secondItem="eru-q5-g9K" secondAttribute="leading" constant="8" id="Bnl-fN-k0a"/>
+                                                        <constraint firstItem="WDB-0A-O05" firstAttribute="leading" secondItem="ynZ-jA-1BV" secondAttribute="trailing" constant="8" id="Egh-AC-dOZ"/>
+                                                        <constraint firstItem="Ppo-sl-Y6p" firstAttribute="leading" secondItem="ynZ-jA-1BV" secondAttribute="trailing" constant="8" id="Kmf-vY-Plr"/>
                                                         <constraint firstItem="ynZ-jA-1BV" firstAttribute="centerY" secondItem="eru-q5-g9K" secondAttribute="centerY" id="M0B-X6-1wh"/>
+                                                        <constraint firstAttribute="trailing" secondItem="d53-TY-KKr" secondAttribute="trailing" constant="8" id="QRd-G1-Iyf"/>
+                                                        <constraint firstItem="d53-TY-KKr" firstAttribute="top" secondItem="WDB-0A-O05" secondAttribute="bottom" constant="8" id="UXs-Cq-EUS"/>
+                                                        <constraint firstItem="WDB-0A-O05" firstAttribute="top" secondItem="eru-q5-g9K" secondAttribute="top" constant="8" id="ccn-H1-HNz"/>
+                                                        <constraint firstItem="d53-TY-KKr" firstAttribute="leading" secondItem="ynZ-jA-1BV" secondAttribute="trailing" constant="8" id="dmX-bY-PGo"/>
+                                                        <constraint firstItem="Ppo-sl-Y6p" firstAttribute="top" secondItem="d53-TY-KKr" secondAttribute="bottom" constant="8" id="lHj-ef-41h"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Ppo-sl-Y6p" secondAttribute="trailing" constant="8" id="uFw-vR-2lb"/>
+                                                        <constraint firstAttribute="trailing" secondItem="WDB-0A-O05" secondAttribute="trailing" constant="8" id="w8S-nR-j5l"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Ppo-sl-Y6p" secondAttribute="bottom" constant="8" id="zd7-Dv-pme"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
