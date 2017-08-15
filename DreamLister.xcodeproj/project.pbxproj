@@ -13,6 +13,14 @@
 		71E8FE531F43A1B0007927E6 /* DreamLister.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 71E8FE511F43A1B0007927E6 /* DreamLister.xcdatamodeld */; };
 		71E8FE551F43A1B0007927E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71E8FE541F43A1B0007927E6 /* Assets.xcassets */; };
 		71E8FE581F43A1B0007927E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71E8FE561F43A1B0007927E6 /* LaunchScreen.storyboard */; };
+		71E8FE671F43B14D007927E6 /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E8FE5F1F43B14D007927E6 /* Item+CoreDataClass.swift */; };
+		71E8FE681F43B14D007927E6 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E8FE601F43B14D007927E6 /* Item+CoreDataProperties.swift */; };
+		71E8FE691F43B14D007927E6 /* ItemType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E8FE611F43B14D007927E6 /* ItemType+CoreDataClass.swift */; };
+		71E8FE6A1F43B14D007927E6 /* ItemType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E8FE621F43B14D007927E6 /* ItemType+CoreDataProperties.swift */; };
+		71E8FE6B1F43B14D007927E6 /* Image+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E8FE631F43B14D007927E6 /* Image+CoreDataClass.swift */; };
+		71E8FE6C1F43B14D007927E6 /* Image+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E8FE641F43B14D007927E6 /* Image+CoreDataProperties.swift */; };
+		71E8FE6D1F43B14D007927E6 /* Store+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E8FE651F43B14D007927E6 /* Store+CoreDataClass.swift */; };
+		71E8FE6E1F43B14D007927E6 /* Store+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E8FE661F43B14D007927E6 /* Store+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		71E8FE541F43A1B0007927E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71E8FE571F43A1B0007927E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71E8FE591F43A1B0007927E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71E8FE5F1F43B14D007927E6 /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataClass.swift"; sourceTree = "<group>"; };
+		71E8FE601F43B14D007927E6 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		71E8FE611F43B14D007927E6 /* ItemType+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemType+CoreDataClass.swift"; sourceTree = "<group>"; };
+		71E8FE621F43B14D007927E6 /* ItemType+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemType+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		71E8FE631F43B14D007927E6 /* Image+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataClass.swift"; sourceTree = "<group>"; };
+		71E8FE641F43B14D007927E6 /* Image+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		71E8FE651F43B14D007927E6 /* Store+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Store+CoreDataClass.swift"; sourceTree = "<group>"; };
+		71E8FE661F43B14D007927E6 /* Store+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Store+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 		71E8FE491F43A1B0007927E6 /* DreamLister */ = {
 			isa = PBXGroup;
 			children = (
+				71E8FE6F1F43B19F007927E6 /* Model */,
 				71E8FE4A1F43A1B0007927E6 /* AppDelegate.swift */,
 				71E8FE4C1F43A1B0007927E6 /* ViewController.swift */,
 				71E8FE4E1F43A1B0007927E6 /* Main.storyboard */,
@@ -65,6 +82,29 @@
 				71E8FE511F43A1B0007927E6 /* DreamLister.xcdatamodeld */,
 			);
 			path = DreamLister;
+			sourceTree = "<group>";
+		};
+		71E8FE6F1F43B19F007927E6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				71E8FE5F1F43B14D007927E6 /* Item+CoreDataClass.swift */,
+				71E8FE611F43B14D007927E6 /* ItemType+CoreDataClass.swift */,
+				71E8FE631F43B14D007927E6 /* Image+CoreDataClass.swift */,
+				71E8FE651F43B14D007927E6 /* Store+CoreDataClass.swift */,
+				71E8FE701F43B1AA007927E6 /* Generated */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		71E8FE701F43B1AA007927E6 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				71E8FE601F43B14D007927E6 /* Item+CoreDataProperties.swift */,
+				71E8FE621F43B14D007927E6 /* ItemType+CoreDataProperties.swift */,
+				71E8FE641F43B14D007927E6 /* Image+CoreDataProperties.swift */,
+				71E8FE661F43B14D007927E6 /* Store+CoreDataProperties.swift */,
+			);
+			name = Generated;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,9 +179,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71E8FE6C1F43B14D007927E6 /* Image+CoreDataProperties.swift in Sources */,
+				71E8FE691F43B14D007927E6 /* ItemType+CoreDataClass.swift in Sources */,
 				71E8FE4D1F43A1B0007927E6 /* ViewController.swift in Sources */,
 				71E8FE4B1F43A1B0007927E6 /* AppDelegate.swift in Sources */,
+				71E8FE6E1F43B14D007927E6 /* Store+CoreDataProperties.swift in Sources */,
+				71E8FE6B1F43B14D007927E6 /* Image+CoreDataClass.swift in Sources */,
+				71E8FE671F43B14D007927E6 /* Item+CoreDataClass.swift in Sources */,
 				71E8FE531F43A1B0007927E6 /* DreamLister.xcdatamodeld in Sources */,
+				71E8FE6D1F43B14D007927E6 /* Store+CoreDataClass.swift in Sources */,
+				71E8FE6A1F43B14D007927E6 /* ItemType+CoreDataProperties.swift in Sources */,
+				71E8FE681F43B14D007927E6 /* Item+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
