@@ -26,14 +26,57 @@
                                 <segments>
                                     <segment title="First"/>
                                     <segment title="Second"/>
+                                    <segment title="Title"/>
                                 </segments>
+                                <color key="tintColor" red="0.29222656250000001" green="0.29222656250000001" blue="0.29222656250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DGr-8u-43f">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="150" id="iQk-rH-eAN">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iQk-rH-eAN" id="33v-pD-6Or">
+                                            <frame key="frameInset" width="343" height="149"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eru-q5-g9K">
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ynZ-jA-1BV">
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="100" id="0bF-u4-HdS"/>
+                                                                <constraint firstAttribute="height" constant="100" id="79C-Os-pKp"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="ynZ-jA-1BV" firstAttribute="leading" secondItem="eru-q5-g9K" secondAttribute="leading" constant="8" id="Bnl-fN-k0a"/>
+                                                        <constraint firstItem="ynZ-jA-1BV" firstAttribute="centerY" secondItem="eru-q5-g9K" secondAttribute="centerY" id="M0B-X6-1wh"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="eru-q5-g9K" firstAttribute="leading" secondItem="33v-pD-6Or" secondAttribute="leadingMargin" id="S9D-cm-vRU"/>
+                                                <constraint firstItem="eru-q5-g9K" firstAttribute="bottom" secondItem="33v-pD-6Or" secondAttribute="bottomMargin" id="f2Z-oM-e4u"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="eru-q5-g9K" secondAttribute="trailing" id="pD2-6Y-nua"/>
+                                                <constraint firstItem="eru-q5-g9K" firstAttribute="top" secondItem="33v-pD-6Or" secondAttribute="topMargin" id="xK4-ls-zwi"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="DGr-8u-43f" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="D7A-eE-k8h"/>
                             <constraint firstItem="nkv-GU-ngV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="WZF-Dq-3jz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DGr-8u-43f" secondAttribute="bottom" id="aih-ac-Suu"/>
+                            <constraint firstItem="DGr-8u-43f" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cwL-7O-cpl"/>
                             <constraint firstItem="nkv-GU-ngV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="tv3-gd-gOh"/>
                             <constraint firstAttribute="trailingMargin" secondItem="nkv-GU-ngV" secondAttribute="trailing" constant="20" id="zcY-Md-Qls"/>
+                            <constraint firstItem="DGr-8u-43f" firstAttribute="top" secondItem="nkv-GU-ngV" secondAttribute="bottom" constant="20" id="zvo-au-YWr"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="DreamLister" id="gh5-5r-dev">
