@@ -32,17 +32,18 @@
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DGr-8u-43f">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="150" id="iQk-rH-eAN">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="150" id="iQk-rH-eAN" customClass="ItemCell" customModule="DreamLister" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iQk-rH-eAN" id="33v-pD-6Or">
                                             <frame key="frameInset" width="343" height="149"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eru-q5-g9K">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eru-q5-g9K" customClass="ItemCell" customModule="DreamLister" customModuleProvider="target">
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ynZ-jA-1BV">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tesla" translatesAutoresizingMaskIntoConstraints="NO" id="ynZ-jA-1BV">
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="100" id="0bF-u4-HdS"/>
                                                                 <constraint firstAttribute="height" constant="100" id="79C-Os-pKp"/>
@@ -88,6 +89,7 @@
                                                     </constraints>
                                                 </view>
                                             </subviews>
+                                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstItem="eru-q5-g9K" firstAttribute="leading" secondItem="33v-pD-6Or" secondAttribute="leadingMargin" id="S9D-cm-vRU"/>
                                                 <constraint firstItem="eru-q5-g9K" firstAttribute="bottom" secondItem="33v-pD-6Or" secondAttribute="bottomMargin" id="f2Z-oM-e4u"/>
@@ -95,7 +97,13 @@
                                                 <constraint firstItem="eru-q5-g9K" firstAttribute="top" secondItem="33v-pD-6Or" secondAttribute="topMargin" id="xK4-ls-zwi"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="details" destination="Ppo-sl-Y6p" id="lE1-Nb-H1r"/>
+                                            <outlet property="price" destination="d53-TY-KKr" id="Whf-3v-Lyz"/>
+                                            <outlet property="thumb" destination="ynZ-jA-1BV" id="Cbv-tU-wsJ"/>
+                                            <outlet property="title" destination="WDB-0A-O05" id="qnf-cV-Hg9"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -110,12 +118,19 @@
                             <constraint firstAttribute="trailingMargin" secondItem="nkv-GU-ngV" secondAttribute="trailing" constant="20" id="zcY-Md-Qls"/>
                             <constraint firstItem="DGr-8u-43f" firstAttribute="top" secondItem="nkv-GU-ngV" secondAttribute="bottom" constant="20" id="zvo-au-YWr"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <navigationItem key="navigationItem" title="DreamLister" id="gh5-5r-dev">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="pw8-zP-trh">
                             <color key="tintColor" red="0.29222656250000001" green="0.29222656250000001" blue="0.29222656250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="segment" destination="nkv-GU-ngV" id="bbp-5c-OXM"/>
+                        <outlet property="tableView" destination="DGr-8u-43f" id="oGn-HQ-GAo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -144,4 +159,7 @@
             <point key="canvasLocation" x="120.8" y="-561.76911544227892"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="tesla" width="800" height="489"/>
+    </resources>
 </document>
