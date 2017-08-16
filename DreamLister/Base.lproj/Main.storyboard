@@ -143,7 +143,7 @@
         <!--Add/Edit-->
         <scene sceneID="ctc-we-U8r">
             <objects>
-                <viewController id="nVD-wt-ijQ" sceneMemberID="viewController">
+                <viewController id="nVD-wt-ijQ" customClass="ItemDetailsVC" customModule="DreamLister" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="i8f-mI-8PY"/>
                         <viewControllerLayoutGuide type="bottom" id="hFM-aZ-j3W"/>
@@ -258,9 +258,10 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Krk-Xr-7bQ" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rIi-qM-PPo">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="rIi-qM-PPo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" red="0.29222656250000001" green="0.29222656250000001" blue="0.29222656250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
