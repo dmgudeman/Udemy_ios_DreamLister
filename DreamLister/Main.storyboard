@@ -123,17 +123,17 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <navigationItem key="navigationItem" title="DreamLister" id="gh5-5r-dev">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="pw8-zP-trh">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="pw8-zP-trh" customClass="ItemDetailsVCNew">
                             <color key="tintColor" red="0.29222656250000001" green="0.29222656250000001" blue="0.29222656250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
-                                <segue destination="nVD-wt-ijQ" kind="show" identifier="ItemDetailsVCNew" id="CEe-J9-N7P"/>
+                                <segue destination="nVD-wt-ijQ" kind="show" identifier="ItemDetailsVC" id="aWA-Eq-1GU"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="segment" destination="nkv-GU-ngV" id="bbp-5c-OXM"/>
-                        <outlet property="tableView" destination="DGr-8u-43f" id="oGn-HQ-GAo"/>
-                        <segue destination="nVD-wt-ijQ" kind="show" identifier="ItemsDetailsNew" id="jhF-FD-Yhl"/>
+                        <outlet property="segment" destination="nkv-GU-ngV" id="IuY-sL-T3T"/>
+                        <outlet property="tableView" destination="DGr-8u-43f" id="c7q-gp-z3A"/>
+                        <segue destination="nVD-wt-ijQ" kind="show" identifier="ItemDetailsVCNew" id="pse-1h-0OU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -284,7 +284,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q0H-wx-I6U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="120.8" y="-561.76911544227892"/>
+            <point key="canvasLocation" x="81" y="-527"/>
         </scene>
     </scenes>
     <resources>
@@ -292,6 +292,6 @@
         <image name="tesla" width="800" height="489"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="CEe-J9-N7P"/>
+        <segue reference="pse-1h-0OU"/>
     </inferredMetricsTieBreakers>
 </document>
