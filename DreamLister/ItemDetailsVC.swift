@@ -48,7 +48,7 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
 //        store6.name = "K Mart"
 //        
 //        ad.saveContext()
-        
+    
         getStores()
         
         if itemToEdit != nil {
