@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7162C0B11F46234900338EB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7162C0B01F46234900338EB2 /* Main.storyboard */; };
 		71CB1BFC1F44B75600550B07 /* ItemDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CB1BFB1F44B75600550B07 /* ItemDetailsVC.swift */; };
 		71CB1C001F44C38D00550B07 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CB1BFF1F44C38D00550B07 /* CustomTextField.swift */; };
 		71E8FE4B1F43A1B0007927E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E8FE4A1F43A1B0007927E6 /* AppDelegate.swift */; };
 		71E8FE4D1F43A1B0007927E6 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E8FE4C1F43A1B0007927E6 /* MainVC.swift */; };
-		71E8FE501F43A1B0007927E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71E8FE4E1F43A1B0007927E6 /* Main.storyboard */; };
 		71E8FE531F43A1B0007927E6 /* DreamLister.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 71E8FE511F43A1B0007927E6 /* DreamLister.xcdatamodeld */; };
 		71E8FE551F43A1B0007927E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71E8FE541F43A1B0007927E6 /* Assets.xcassets */; };
 		71E8FE581F43A1B0007927E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71E8FE561F43A1B0007927E6 /* LaunchScreen.storyboard */; };
@@ -28,12 +28,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7162C0B01F46234900338EB2 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		71CB1BFB1F44B75600550B07 /* ItemDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailsVC.swift; sourceTree = "<group>"; };
 		71CB1BFF1F44C38D00550B07 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		71E8FE471F43A1B0007927E6 /* DreamLister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamLister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71E8FE4A1F43A1B0007927E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71E8FE4C1F43A1B0007927E6 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
-		71E8FE4F1F43A1B0007927E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		71E8FE521F43A1B0007927E6 /* DreamLister.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DreamLister.xcdatamodel; sourceTree = "<group>"; };
 		71E8FE541F43A1B0007927E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71E8FE571F43A1B0007927E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -93,9 +93,9 @@
 				71E8FE6F1F43B19F007927E6 /* Model */,
 				71E8FE4A1F43A1B0007927E6 /* AppDelegate.swift */,
 				71E8FE4C1F43A1B0007927E6 /* MainVC.swift */,
-				71E8FE4E1F43A1B0007927E6 /* Main.storyboard */,
 				71E8FE541F43A1B0007927E6 /* Assets.xcassets */,
 				71E8FE561F43A1B0007927E6 /* LaunchScreen.storyboard */,
+				7162C0B01F46234900338EB2 /* Main.storyboard */,
 				71E8FE591F43A1B0007927E6 /* Info.plist */,
 				71E8FE511F43A1B0007927E6 /* DreamLister.xcdatamodeld */,
 			);
@@ -194,9 +194,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7162C0B11F46234900338EB2 /* Main.storyboard in Resources */,
 				71E8FE581F43A1B0007927E6 /* LaunchScreen.storyboard in Resources */,
 				71E8FE551F43A1B0007927E6 /* Assets.xcassets in Resources */,
-				71E8FE501F43A1B0007927E6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,14 +228,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		71E8FE4E1F43A1B0007927E6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				71E8FE4F1F43A1B0007927E6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		71E8FE561F43A1B0007927E6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
